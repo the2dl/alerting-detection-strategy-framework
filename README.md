@@ -1,46 +1,9 @@
-# Alerting and Detection Strategies Framework
+# Detection Framework
 
 ## About This Repository
-This is a public version of the [Alerting and Detection Strategy (ADS) framework we use on the Incident Response Team at Palantir](https://www.medium.com/@palantir). 
+This is a modified version of the Palantir ADS Framework which can be found here [Palantir ADS Framework](https://github.com/palantir/alerting-detection-strategy-framework/).
 
-This GitHub project provides the necessary building blocks for adopting this framework for organizations looking to improve the efficacy of their detection strategies. While there are operational security considerations around publicly acknowledging and documenting internal alerts, we hope these examples spur greater sharing and collaboration, inspire detection enhancements for other defenders, and ultimately increase the operational cost for attackers.
-
-## ADS Framework
-Prior to the development and adoption of the ADS framework, we faced major challenges with development of alerting strategies. There was a lack of rigor around the creation, development, and implementation of an alert, which led to sub-optimal alerts going to production without documentation or peer-review. Over time, some of these alerts gained a reputation of being low-quality, which led to fatigue, alerting apathy, or additional engineering time and resources.
-
-To combat the issues and deficiencies previously noted, we developed an ADS Framework which is used for all alerting development. This is a natural language template which helps frame hypothesis generation, testing, and management of new ADS. 
-
-The ADS Framework has the following sections, each which must be completed prior to production implementation:
-
-* Goal
-* Categorization
-* Strategy Abstract
-* Technical Context
-* Blind Spots and Assumptions
-* False Positives
-* Validation
-* Priority
-* Response
-
-Each section is required to successfully deploy a new ADS, and guarantees that any given alert will have sufficient documentation, will be validated for durability, and reviewed prior to production deployment. 
-
-Each production or draft alert is based on the ADS framework is stored in a durable, version-controlled, and centralized location (e.g. Wiki, GitHub entry, etc.) 
-
-## Repository Layout
-This repository is organized as follows:
-* [**ADS-Framework**](./ADS-Framework.md): The core ADS framework which is used internally at Palantir.
-* [**ADS-Examples**](./ADS-Examples/): ADS examples which have been generated in accordance to this framework. These represent human-readable alerting strategies which may be deployed to detect malicious or anomalous activity.
-
-### Using This Repository
-**Note**: We recommend that you spin up a lab environment before deploying any of these configurations, scripts, or subscriptions to a production environment.
-
-1. Download the repository and review the contents.
-2. Run a ADS hack week and try converting or generating several new alerts.
-3. Perform peer review of each new ADS and provide critical feedback. 
-4. Start the process of converting legacy alerts into the ADS format.
-
-## Contributing
-Contributions, fixes, and improvements can be submitted directly against this project as a GitHub issue or pull request. 
+This version is updated to reflect modifications I found to be useful in onboarding detections. Much of the work by the Palantir team is still utilized here, just some changes to some categories to be documented, and re-wording certain sections.
 
 ## License
 MIT License
