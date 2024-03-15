@@ -8,6 +8,8 @@ Detect attempts by a threat actor to enumerate SPN's and harvest weak passwords 
 # Categorization
 These attempts are categorized as [Credential Access / Steal or Forge Kerberos Tickets / Kerberoasting](https://attack.mitre.org/techniques/T1558/003/).
 
+The data source is [Active Directory](https://attack.mitre.org/datasources/DS0026/).
+
 # Detection Functionality
 The detection will work as follows:
 
