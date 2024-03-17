@@ -16,7 +16,8 @@ The detection will work as follows:
 
 * Record Windows Event logs
 * Look for Windows EventID 4769
-* Identify where the Encryption Type is 0x17
+* Identify where the Encryption Type is 0x17 (RC4_HMAC)
+* Identify where the Encryption Type is 0x12 (AES)
 * Suppress known-good service accounts
   * Accounts ending with $
   * Known source users that run tools that enumerate SPN's
