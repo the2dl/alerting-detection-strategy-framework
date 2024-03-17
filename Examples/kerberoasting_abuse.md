@@ -1,6 +1,7 @@
 # Detection Name
 
-kerberoasting_abuse.yaral
+* Recommended rule name - kerberoasting_abuse.yaral
+* Reference - **a9b2005b-99cb-48ed-b0a5-d56579fcd9ee**
 
 # Goal
 Detect attempts by a threat actor to enumerate SPN's and harvest weak passwords from service accounts via kerberoasting.

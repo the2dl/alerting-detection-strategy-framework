@@ -1,5 +1,7 @@
-# Detection Name
-Recommended detection name to be created. This can be any format you decide works best for your organization.
+# Detection Name and Reference
+Recommended detection name to be created. This can be any format you decide works best for your organization. 
+
+For reference, the GUID associated to this testing is **unique-guid** in SSDT.
 
 # Goal
 The goal is the intended purpose of the alert. It is a simple, plaintext description of the type of behavior you're attempting to detect.
